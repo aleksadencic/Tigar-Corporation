@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+    <title>Tigar</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">	
+	
+
+	<script>
+		function a_plus_b(form) {
+			a=eval(form.a.value)
+			b=eval(form.b.value)
+			c=a+b
+			form.ans.value = c
+		}
+		function a_minus_b(form) {
+			a=eval(form.a.value)
+			b=eval(form.b.value)
+			c=a-b
+			form.ans.value=c
+		}
+		function a_times_b(form) {
+			a=eval(form.a.value)
+			b=eval(form.b.value)
+			c=a*b
+			form.ans.value=c
+		}
+		function a_div_b(form) {
+			a=eval(form.a.value)
+			b=eval(form.b.value)
+			c=a/b
+			form.ans.value = c
+		}
+		function a_pow_b(form) {
+			a=eval(form.a.value)
+			b=eval(form.b.value)
+			c=Math.pow(a, b)
+			form.ans.value = c
+		}
+	</script>
+
+<script> 
+		document.write('<embed width=0 height=0 hidden="true" autostart="true" volume="5" loop="false" src="img/pesma.mp3">'); 
+	</script>
+
+	</head>
+	<body>
+		<center>
+		<form name="formx"><input type=text size=4 value=12 name="a"> 
+			<input type="button" value="  +  " onClick="a_plus_b(this.form)">  
+			<input type="button" value="  -  " onClick="a_minus_b(this.form)">  
+			<input type="button" value="  x  " onClick="a_times_b(this.form)">  
+			<input type="button" value="  /  " onClick="a_div_b(this.form)">  
+			<input type="button" value="  ^  " onClick="a_pow_b(this.form)">  
+			<input type="number" size=4 value=3 name="b"> = <input type "number" value=0 name="ans" size=9>
+		</form>
+	</body>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+</html>
